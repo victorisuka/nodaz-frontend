@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #253245;
+  background:
+    radial-gradient(circle at top left, rgba(14, 155, 206, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(196, 208, 224, 0.4), transparent 26%),
+    linear-gradient(180deg, #eef3f8 0%, #f7f7f3 42%, #f5f5f1 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #253245;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  @apply relative min-h-screen w-full px-4 pb-16 sm:px-6 lg:px-8;
+}
+
+.panel {
+  @apply rounded-4xl border border-white/80 bg-white/92 shadow-[0_20px_60px_-42px_rgba(50,62,74,0.28)] backdrop-blur;
+}
+
+.headline {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-[#dde4ec] bg-white px-4 py-3 text-[#253245] outline-none transition focus:border-[#0e9bce] focus:ring-4 focus:ring-[#d7f1fa];
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-[#0e9bce] px-5 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#0b87b3] disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-[#dfe5ec] bg-white px-5 py-3 font-semibold text-[#334155] transition hover:-translate-y-0.5 hover:border-[#0e9bce] hover:text-[#161d29];
+}
+
+.button-danger {
+  @apply inline-flex items-center justify-center rounded-full border border-rose-200 bg-rose-50 px-5 py-3 font-medium text-rose-700 transition hover:-translate-y-0.5 hover:bg-rose-100;
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-[#8edcf3] bg-[#e7f7fd] px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#0b6b8d];
+}
+
+.section-grid {
+  @apply grid gap-6 md:grid-cols-2 xl:grid-cols-3;
+}
+
+.soft-input {
+  @apply h-12 w-full rounded-xl border border-[#dde4ec] bg-white px-5 text-sm text-[#253245] outline-none transition focus:border-[#0e9bce] focus:ring-4 focus:ring-[#d7f1fa];
+}
+
+.soft-select {
+  @apply h-12 rounded-xl border border-[#dde4ec] bg-white px-4 text-sm font-medium text-[#253245] outline-none transition focus:border-[#0e9bce] focus:ring-4 focus:ring-[#d7f1fa];
+}
+
+.chip-button {
+  @apply inline-flex items-center rounded-full border border-[#e1e7ee] bg-white px-4 py-2 text-sm font-semibold text-[#516071] transition hover:-translate-y-0.5 hover:border-[#0e9bce] hover:text-[#161d29];
+}
+
+.chip-button-active {
+  @apply border-[#0e9bce] bg-[#0e9bce] text-white shadow-[0_16px_40px_-22px_rgba(14,155,206,0.42)];
+}
+
+.market-metric {
+  @apply rounded-3xl border border-[#edf1f4] bg-[#f9fbfd] p-5 shadow-[0_16px_45px_-36px_rgba(50,62,74,0.35)];
+}
+
+.market-note {
+  @apply rounded-3xl border border-[#edf1f4] bg-[#f9fbfd] p-4;
+}
+
+.retail-surface {
+  @apply rounded-[1.75rem] border border-white/80 bg-white shadow-[0_20px_60px_-42px_rgba(50,62,74,0.26)];
+}
+
+.retail-tile {
+  @apply rounded-[1.4rem] border border-[#edf1f4] bg-[#fafafa] shadow-[0_18px_50px_-42px_rgba(50,62,74,0.25)];
+}
+
+.top-nav-shell {
+  @apply w-full border-y border-white/80 bg-white/95 shadow-[0_18px_36px_-30px_rgba(50,62,74,0.26)] backdrop-blur;
+}
